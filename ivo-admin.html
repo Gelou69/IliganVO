@@ -2177,8 +2177,9 @@
                         </select></div>
                     <div><label class="flabel">Year Joined</label><input class="finput" type="number" id="memY"
                             placeholder="2024" min="2000" max="2030" /></div>
-                    <div class="full"><label class="flabel">Photo URL</label><input class="finput" id="memP"
-                            placeholder="https://..." /></div>
+                    <div class="full"><label class="flabel">Photo</label><input class="finput" type="file" id="memFile" accept="image/*" />
+                        <img id="memPreview" style="max-width:100px;margin-top:6px;display:none;" />
+                    </div>
                 </div>
                 <input type="hidden" id="memEditId" />
             </div>
