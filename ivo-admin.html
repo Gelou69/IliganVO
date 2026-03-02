@@ -2062,7 +2062,10 @@
 
                         <!-- Supabase config -->
                         <div class="set-card full">
-                            <div class="set-title">Supabase Configuration</div>
+                            <div class="set-title">
+                                <img id="installLogo" class="install-logo" src="logo.png" alt="IVO logo" style="width:38px;vertical-align:middle;margin-right:8px;" />
+                                Supabase Configuration
+                            </div>
                             <div class="set-desc">Connect your Supabase project. Get these from Supabase → Settings →
                                 API.</div>
                             <label class="flabel">Project URL</label>
@@ -2254,7 +2257,7 @@
         //  SUPABASE INIT
         // ════════════════════════════════════════════════════════
         const LOGO = 'logo.png';
-        document.querySelectorAll('#authLogo,#sbLogo').forEach(el => el.src = LOGO);
+        document.querySelectorAll('#authLogo,#sbLogo,#installLogo').forEach(el => el.src = LOGO);
 
         let SUPA_URL = localStorage.getItem('ivo_sb_url') || 'https://andbjdvbjwamdweenhqx.supabase.co';
         let SUPA_KEY = localStorage.getItem('ivo_sb_key') || 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFuZGJqZHZiandhbWR3ZWVuaHF4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzI0NDMwMjAsImV4cCI6MjA4ODAxOTAyMH0.QQbuBzRvfjdY3EEKsnc_partp1SvMrgj5dl2s7NsI8Y';
